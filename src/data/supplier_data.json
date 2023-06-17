@@ -1,0 +1,74 @@
+[
+    {
+        "name":"Prime Sourcing Co.",
+        "product":"Chicken",
+        "category":"Food",
+        "price":"RM4.00/kg",
+        "map":"https://www.google.com/maps/embed/v1/place?q=KLCC+Park,+Kuala+Lumpur+City+Centre,+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"9.1",
+        "reviews":"234",
+        "delivery":88,
+        "quality":91,
+        "service":79
+    },
+    {
+        "name":"Optimum Sourcing Solutions",
+        "product":"Fish",
+        "category":"Food",
+        "price":"RM3.50/kg",
+        "map":"https://www.google.com/maps/embed/v1/place?q=Sepang,+Selangor,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"8.7",
+        "reviews":"144",
+        "delivery":80,
+        "quality":71,
+        "service":89
+    },
+    {
+        "name":"Direct Importers Inc.",
+        "product":"Broccoli",
+        "category":"Food",
+        "price":"RM2.50/kg",
+        "map":"https://www.google.com/maps/embed/v1/place?q=George+Town,+Penang,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"8.7",
+        "reviews":"144",
+        "delivery":69,
+        "quality":81,
+        "service":79
+    },
+    {
+        "name":"Reliable Trading Company",
+        "product":"Coke",
+        "category":"Drinks",
+        "price":"RM24/box",
+        "map":"https://www.google.com/maps/embed/v1/place?q=Universiti+Sains+Malaysia,+Gelugor,+Penang,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"8.7",
+        "reviews":"144",
+        "delivery":80,
+        "quality":71,
+        "service":89
+    },
+    {
+        "name":"Efficient Supply Solutions",
+        "product":"Sprite",
+        "category":"Drinks",
+        "price":"RM23/box",
+        "map":"https://www.google.com/maps/embed/v1/place?q=KLCC+Park,+Kuala+Lumpur+City+Centre,+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"8.7",
+        "reviews":"144",
+        "delivery":80,
+        "quality":71,
+        "service":89
+    },
+    {
+        "name":"Dynamic Import Export Co.",
+        "product":"Sprite",
+        "category":"Drinks",
+        "price":"RM24/box",
+        "map":"https://www.google.com/maps/embed/v1/place?q=KLCC+Park,+Kuala+Lumpur+City+Centre,+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+        "overall_rating":"8.7",
+        "reviews":"144",
+        "delivery":80,
+        "quality":71,
+        "service":89
+    }
+]
