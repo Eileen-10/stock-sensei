@@ -1,0 +1,165 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Forecast">
+    <Navbar />
+    <div class="flex-container">
+        <div class="box">
+            <span class="noun">On Hand</span>
+            <div class="flex-word">
+                <span class="number">123.0</span>
+                <span class="unit">unit</span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="noun">Forecasted Value To Purchase</span>
+            <div class="flex-word">
+                <span class="number">146.0</span>
+                <span class="unit">unit</span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="noun">Total Unit Needed</span>
+            <div class="flex-word">
+                <span class="number">269.0</span>
+                <span class="unit">unit</span>
+            </div>
+        </div>
+        <div class="box">
+            <span class="noun">Value of Product</span>
+            <div class="flex-word">
+                <span class="unit">RM</span>
+                <span class="number">1234.0</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex-graph">
+        <img src="graph.png" />
+        <div class="flex-detail">
+            <div class="purchase"></div>
+            <div class="forecast"></div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .box {
+        width: 300px;
+        height: 100px;
+        background-color: #f39a9a;
+        display: flex;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-items: start;
+        justify-content: center;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        flex-direction: column;
+        padding-right: 10 px;
+    }
+    .purchase {
+        width: 300px;
+        height: 300px;
+        align-items: right;
+        justify-items: flex-end;
+        justify-content: center;
+
+        background-image: url("Purchase.png");
+        background-size: auto;
+        background-position: center;
+    }
+
+    .forecast {
+        width: 300px;
+        height: 200px;
+
+        background-image: url("forecast.png");
+    }
+
+    .graph {
+        width: 600px;
+        height: 500px;
+
+        background-image: url("graph.png");
+        background-size: auto;
+        background-position: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-word {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: self-end;
+    }
+
+    .flex-graph {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: self-end;
+        flex-direction: row;
+    }
+
+    .flex-detail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .noun {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(1, 1, 3);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .number {
+        font-size: 60px;
+        color: rgb(55, 20, 255);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .unit {
+        font-size: 20px;
+        color: rgb(250, 250, 250);
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .graph {
+        width: 200px;
+        height: 200px;
+        background-image: url("graph.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    img {
+        display: flex;
+        width: 600px;
+        height: 600px;
+        align-items: left;
+        justify-self: flex-start;
+    }
+</style>
