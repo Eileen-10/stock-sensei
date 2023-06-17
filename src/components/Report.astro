@@ -1,0 +1,46 @@
+---
+import report_data from "../data/report_data.json";
+---
+
+<div>
+    <p class="font-bold text-3xl mb-8">Report</p>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3"> Product</th>
+                    <th scope="col" class="px-6 py-3"> ID</th>
+                    <th scope="col" class="px-6 py-3"> Stock on Hand</th>
+                    <th scope="col" class="px-6 py-3">
+                        Forecast Amt to Purchase</th
+                    >
+                    <th scope="col" class="px-6 py-3"> Total Number Needed</th>
+                    <th scope="col" class="px-6 py-3">
+                        Value Need to Purchase</th
+                    >
+                    <th scope="col" class="px-6 py-3"> Supplier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    report_data.map((report, index) => (
+                        <tr class="bg-white border-b  hover:bg-gray-50 ">
+                            <th
+                                scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                            >
+                                <a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.product}</a>
+                            </th>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.id}</a></td>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.stock}</a></td>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.forecast_amt}</a></td>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.total_needed}</a></td>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.value_needed}</a></td>
+                            <td class="px-6 py-4"><a href={report.product == "Chicken" ? "/forecast" : "#"}>{report.supplier}</a></td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

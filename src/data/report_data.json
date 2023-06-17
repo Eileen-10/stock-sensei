@@ -1,0 +1,38 @@
+[
+    {
+        "product":"Chicken",
+        "id":"10001",
+        "stock":"123.0",
+        "forecast_amt":"146.0",
+        "total_needed":"269.0",
+        "value_needed":"RM 1234.00",
+        "supplier":"Chicken Ho Sdn.Bhd"
+    },
+   {
+        "product":"Duck",
+        "id":"10002",
+        "stock":"0.0",
+        "forecast_amt":"245.0",
+        "total_needed":"245.0",
+        "value_needed":"RM 4875.00",
+        "supplier":"Good Duck Sdn.Bhd"
+    },
+    {
+        "product":"Broccoli",
+        "id":"10124",
+        "stock":"45.0",
+        "forecast_amt":"342.0",
+        "total_needed":"387.0",
+        "value_needed":"RM 456.00",
+        "supplier":"Vege Sdn.Bhd"
+    },
+    {
+        "product":"Beef",
+        "id":"10003",
+        "stock":"0",
+        "forecast_amt":"456.0",
+        "total_needed":"456.0",
+        "value_needed":"RM 5678.00",
+        "supplier":"Hi Beef Sdn.Bhd"
+    }
+]
