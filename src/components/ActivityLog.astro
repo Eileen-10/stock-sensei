@@ -1,0 +1,56 @@
+---
+import activity_log from "../data/activity_log_data.json";
+---
+<div> 
+    <p class="font-bold text-3xl mb-8">Activity Log</p>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Product
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        ID
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Date
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        From
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        To
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Status
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {activity_log.map((activity,index)=>(
+                    <tr class="bg-white border-b  hover:bg-gray-50 ">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            {activity.product}
+                        </th>
+                        <td class="px-6 py-4">
+                            {activity.id}
+                        </td>
+                        <td class="px-6 py-4">
+                            {activity.date}
+                        </td>
+                        <td class="px-6 py-4">
+                            {activity.from}
+                        </td>
+                        <td class="px-6 py-4">
+                            {activity.to}
+                        </td>
+                        <td class="px-6 py-4">
+                            {activity.status}
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    </div>
+</div>
