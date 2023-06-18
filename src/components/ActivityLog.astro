@@ -28,7 +28,7 @@ import activity_log from "../data/activity_log_data.json";
                 </tr>
             </thead>
             <tbody>
-                {activity_log.map((activity,index)=>(
+                {activity_log.map((activity)=>(
                     <tr class="bg-white border-b  hover:bg-gray-50 ">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                             {activity.product}
@@ -46,7 +46,9 @@ import activity_log from "../data/activity_log_data.json";
                             {activity.to}
                         </td>
                         <td class="px-6 py-4">
-                            {activity.status}
+                            <span class={activity.status == "Completed" ? "bg-green-400 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded" : "hidden"}>{activity.status}</span>
+                            <span class={activity.status == "In-Transit" ? "bg-yellow-300 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded" : "hidden"}>{activity.status}</span>
+                            <span class={activity.status == "Cancelled" ? "bg-red-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded" : "hidden"}>{activity.status}</span>
                         </td>
                     </tr>
                 ))}
