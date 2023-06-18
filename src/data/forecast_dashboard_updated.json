@@ -1,5 +1,11 @@
 [
     {
+        "name":"Chicken",
+        "category":"Food",
+        "uta":146,
+        "link":"/"
+    },
+    {
         "name":"Fish",
         "category":"Food",
         "uta":200,
