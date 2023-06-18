@@ -2,49 +2,49 @@
     {
         "product":"Chicken",
         "id":"10001",
-        "date":"18 June 2023",
+        "date":"17 June 2023",
         "from":"A Supplier",
         "to":"B Restaurant",
         "status":"Completed"
     },
     {
-        "product":"Chicken",
-        "id":"10001",
-        "date":"18 June 2023",
+        "product":"Fish",
+        "id":"29642",
+        "date":"17 June 2023",
         "from":"A Supplier",
         "to":"B Restaurant",
+        "status":"In-Transit"
+    },
+    {
+        "product":"Broccoli",
+        "id":"19742",
+        "date":"18 June 2023",
+        "from":"C Supplier",
+        "to":"D Restaurant",
         "status":"Completed"
     },
     {
-        "product":"Chicken",
-        "id":"10001",
+        "product":"Coke",
+        "id":"19076",
         "date":"18 June 2023",
-        "from":"A Supplier",
-        "to":"B Restaurant",
-        "status":"Completed"
+        "from":"E Supplier",
+        "to":"D Restaurant",
+        "status":"Cancel"
     },
     {
-        "product":"Chicken",
-        "id":"10001",
+        "product":"Sprite",
+        "id":"10538",
         "date":"18 June 2023",
-        "from":"A Supplier",
-        "to":"B Restaurant",
-        "status":"Completed"
+        "from":"F Supplier",
+        "to":"G Restaurant",
+        "status":"In-Transit"
     },
     {
-        "product":"Chicken",
-        "id":"10001",
-        "date":"18 June 2023",
-        "from":"A Supplier",
-        "to":"B Restaurant",
-        "status":"Completed"
-    },
-    {
-        "product":"Chicken",
-        "id":"10001",
-        "date":"18 June 2023",
-        "from":"A Supplier",
-        "to":"B Restaurant",
+        "product":"Potato",
+        "id":"15305",
+        "date":"19 June 2023",
+        "from":"H Supplier",
+        "to":"J Restaurant",
         "status":"Completed"
     }
 ]

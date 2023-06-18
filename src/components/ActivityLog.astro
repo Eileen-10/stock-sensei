@@ -7,6 +7,7 @@ import activity_log from "../data/activity_log_data.json";
         <table class="w-full text-sm text-left text-gray-500">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                 <tr>
+                    <th scope="col" class="px-6 py-3"> </th>
                     <th scope="col" class="px-6 py-3">
                         Product
                     </th>
@@ -30,6 +31,12 @@ import activity_log from "../data/activity_log_data.json";
             <tbody>
                 {activity_log.map((activity,index)=>(
                     <tr class="bg-white border-b  hover:bg-gray-50 ">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <input disabled id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="disabled-checkbox" class="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500"></label>
+                            </div>
+                        </td>
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                             {activity.product}
                         </th>
@@ -46,7 +53,9 @@ import activity_log from "../data/activity_log_data.json";
                             {activity.to}
                         </td>
                         <td class="px-6 py-4">
-                            {activity.status}
+                            <span class={activity.status == "Completed" ? "bg-green-400 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-lg" : "hidden"}>{activity.status}</span>
+                            <span class={activity.status == "In-Transit" ? "bg-yellow-500 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-lg" : "hidden"}>{activity.status}</span>
+                            <span class={activity.status == "Cancel" ? "bg-red-500 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-lg" : "hidden"}>{activity.status}</span>
                         </td>
                     </tr>
                 ))}
